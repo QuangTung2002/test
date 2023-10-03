@@ -3,6 +3,7 @@ plugins {
 
     // Add the Google services Gradle plugin
     id 'com.google.gms.google-services'
+//    id 'com.google.gms.google-services' version '4.3.15'
 }
 
 android {
@@ -12,7 +13,7 @@ android {
     defaultConfig {
         applicationId "com.example.finalproject"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdk 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -35,6 +36,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.1.2'
 //    implementation 'com.google.firebase:firebase-auth:16.0.5'
 //    implementation 'com.google.firebase:firebase-database:16.0.5'
     testImplementation 'junit:junit:4.13.2'
@@ -48,7 +50,7 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
-    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    implementation platform('com.google.firebase:firebase-bom:32.3.1')
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-storage'
@@ -56,6 +58,7 @@ dependencies {
     implementation 'com.github.dhaval2404:imagepicker:2.1'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.firebase:firebase-analytics'
 
 
 }
