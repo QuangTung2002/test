@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
+    compileSdk 32
     buildToolsVersion '32.0.0'
 
     defaultConfig {
@@ -59,6 +59,11 @@ dependencies {
 
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.google.firebase:firebase-analytics'
+    testImplementation'io.appium:java-client:7.5.1'
+
+
+
+
 
 
 }
