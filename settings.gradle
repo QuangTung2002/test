@@ -2,3 +2,5 @@ include ':app'
 rootProject.name = "Final Project"
 include ':autotest'
 include ':automationtest'
+include ':automationtest2'
+include ':automation'
